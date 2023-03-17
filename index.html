@@ -1,0 +1,27 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing's ChatGPT</title>
+</head>
+<body>
+    <header>
+        <h1>Jing's ChatGPT</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Chat History</h2>
+            <div>{{ chat_response }}</div>
+        </section>
+        <section>
+            <form action="/" method="POST">
+                <label for="user_input">Enter your message:</label>
+                <input type="text" name="user_input" id="user_input" required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
